@@ -1,9 +1,9 @@
 import uvicorn
 from fastapi import FastAPI
 
-from endpoints.API import router
+from endpoints.status import router
 
-app = FastAPI(title= 'todo')
+app = FastAPI(title= 'parkinglotApi')
 app.include_router(router)
 
 if __name__ == "__main__":
